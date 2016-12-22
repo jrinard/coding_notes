@@ -1,3 +1,5 @@
+<%= current_github_username %>
+
 <% if Snippet.all.any? %>
   <% Snippet.all.each do |snippet| %>
     <%= snippet.title != nil ? snippet.title : "N/A" %>
